@@ -3,7 +3,12 @@
     width: 32px;
     height: 32px;
     left: 100%;
+    top: 0px;
     transform: translateX(-100%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('/img/spinner.gif');
 }
 
 .header {
@@ -35,15 +40,14 @@
     margin: 0 0;
 }
 
-.user-scene .user-avatar {
-
+.user-avatar {
     margin: 0 auto;
     width: 32px;
     height: 32px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('http://s7.hostingkartinok.com/uploads/images/2014/12/4c6a2d1fd1646febfbd8dd42f040e82a.png');
+    background-image: url('/img/user-avatar.jpg');
 }
 
 .home-scene {

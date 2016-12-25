@@ -5,63 +5,62 @@
     <title>Crazy Author Services</title>
 </head>
 <body>
-<img class="app-spinner" src="https://arsi2015.files.wordpress.com/2015/11/spinner.gif?w=736"/>
-
+<div class="app-spinner"></div>
 <div class="hidden app">
     <div class="header">
-        <div class="top-menu-item">
-            <a href="/home" onclick="routeHref(event)">home</a>
-        </div>
-        <div class="top-menu-item dashboard-menu-item">
-            <a href="/dashboard" onclick="routeHref(event)">dashboard</a>
-        </div>
         <div class="top-menu-item user-header-panel">
             <div class="user-panel">
                 <div class="user-avatar"></div>
                 <div>
                     <span class="user-name"></span>
-                    <span>
-                            <button onclick="logout()">logout</button>
-                        </span>
+                    <button onclick="logout()">logout</button>
                 </div>
             </div>
-            <span class="login-panel">
-                <span>
-                    login form
-                    <input class="login-input" type="text"/><button onclick="login()">login</button>
-                </span>
-            </span>
         </div>
+        <div class="top-menu-item">
+            <a href="/home" onclick="routeHref(event)">home</a>
+        </div>
+        <div class="top-menu-item login-menu-item">
+            <a href="/login" onclick="routeHref(event)">login</a>
+        </div>
+        <div class="top-menu-item dashboard-menu-item">
+            <a href="/dashboard" onclick="routeHref(event)">dashboard</a>
+        </div>
+    </div>
+    <div class="login-scene">
+        <span class="login-panel">
+            <span>
+                login form
+                <input class="login-input" type="text"/><button onclick="login()">login</button>
+            </span>
+        </span>
     </div>
     <div class="home-scene">
         <a name="home">home</a>
-        <p>Все замечательно, в этом стремится. Сроки совместной жизни стороны они начинают самостоятельно вести свой
-            быт. Просто отдохнуть семейные ссоры и ценностях. Второго, навязать ему нравится, или поздно мы сталкиваемся
-            с одной. Идеальных семей, у всех есть свое маленькое и это можно выделить пять. Испытывают трудности во
-            время которых. Некоторое время которых все замечательно. Кризис первых двух совершенно одинаковых людей не
-            раз было сказано.
-
-            Двух совершенно одинаковых людей не. Супруги привыкают друг к если их чувства уже не раз было сказано. Мы
-            сталкиваемся с рождением малыша расскажет сам, а это. Одной стороны они перестали любить тем, что ему свои
-            взгляды. Сказано, что если их чувства уже не существует. Припадает большинство разводов овладевало ими
-            раньше. Факт, что были раньше, значит, они перестали любить а так.
-            Исполнять каждый совершенно одинаковых людей пропадает сильное чувство влюбленности, которое никому нельзя.
-            Обеспечены собственным жильем, процесс привыкания друг к другу у них менее. Уже не все замечательно, в
-            привычках, взглядах на. Обязанности, которые должен исполнять каждый. Ими раньше того, что если молодожены.
-            Маленькое и сокровенное, которое овладевало ими раньше. Супругов стремится перевоспитать второго, навязать
-            ему никто не будет секретом.
-        </p>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+            sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+            fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+            justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper
+            nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+            laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
+            nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero,
+            sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+            Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis
+            ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec
+            sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
     </div>
     <div class="dashboard-scene">
-        <a name="dashboard">dashboard</a>
         <button onclick="dashboardMutateRequestClick()">mutate dashboard</button>
         <code class="dashboard-items"></code>
     </div>
 
 
     <link href="lib/app.css" rel="stylesheet">
-    <script src="lib/app.js"></script>
+    <script src="lib/state.js"></script>
     <script src="lib/middleware.js"></script>
+    <script src="lib/app.js"></script>
     <script src="lib/router.js"></script>
 </body>
 </html>
