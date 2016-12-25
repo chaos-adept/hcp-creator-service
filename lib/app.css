@@ -1,12 +1,23 @@
+.app-spinner {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 100%;
+    transform: translateX(-100%);
+}
+
 .header {
     border: dashed magenta 1px;
     text-align: justify;
 }
+.user-header-panel {
+    display: inline-block;
+}
 
 .top-menu-item {
+    display: inline-block;
     margin: 3px;
     border: dashed black 1px;
-    display: inline-block;
     vertical-align: middle;
 }
 
@@ -24,10 +35,8 @@
     margin: 0 0;
 }
 
-.user-scene {
-    display: inline-block;
-}
 .user-scene .user-avatar {
+
     margin: 0 auto;
     width: 32px;
     height: 32px;

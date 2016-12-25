@@ -5,16 +5,17 @@
     <title>Crazy Author Services</title>
 </head>
 <body>
+<img class="app-spinner" src="https://arsi2015.files.wordpress.com/2015/11/spinner.gif?w=736"/>
 
 <div class="hidden app">
     <div class="header">
         <div class="top-menu-item">
-            <a href="#home">home</a>
+            <a href="/home" onclick="routeToHome(event)">home</a>
         </div>
         <div class="top-menu-item dashboard-menu-item">
-            <a href="#dashboard">dashboard</a>
+            <a href="/dashboard" onclick="routeToDashboard(event)">dashboard</a>
         </div>
-        <div class="top-menu-item user-scene">
+        <div class="top-menu-item user-header-panel">
             <div class="user-panel">
                 <div class="user-avatar"></div>
                 <div>
@@ -53,12 +54,14 @@
     </div>
     <div class="dashboard-scene">
         <a name="dashboard">dashboard</a>
+        <button onclick="dashboardMutateRequestClick()">mutate dashboard</button>
         <code class="dashboard-items"></code>
     </div>
-    <div>
 
 
-        <link href="lib/app.css" rel="stylesheet">
-        <script src="lib/app.js"></script>
+    <link href="lib/app.css" rel="stylesheet">
+    <script src="lib/middleware.js"></script>
+    <script src="lib/router.js"></script>
+    <script src="lib/app.js"></script>
 </body>
 </html>
