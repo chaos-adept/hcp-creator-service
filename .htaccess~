@@ -1,0 +1,8 @@
+DirectoryIndex index index.html
+DirectorySlash off
+Options -Indexes -MultiViews
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^dashboard(.*)$ / [L]
+RewriteRule ^home(.*)$ / [L]
